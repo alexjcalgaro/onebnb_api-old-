@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dmfizx1xi
+  api_key: '256887319157862'
+  api_secret: UtPDnO3ynIYUwCfZ1wPTz-tdvg4
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dmfizx1xi
+  api_key: '256887319157862'
+  api_secret: UtPDnO3ynIYUwCfZ1wPTz-tdvg4
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dmfizx1xi
+  api_key: '256887319157862'
+  api_secret: UtPDnO3ynIYUwCfZ1wPTz-tdvg4
+  enhance_image_tag: true
+  static_image_support: false
