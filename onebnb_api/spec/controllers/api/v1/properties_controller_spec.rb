@@ -21,6 +21,18 @@ RSpec.describe Api::V1::PropertiesController, type: :controller do
         expect(@property.wishlists.last.id).to eql(Wishlist.last.id)
       end
     end
+
+    context "with user valid in wishkists" do
+      before do
+        request.headers.merge!(@auth_headers)
+      end
+ 
+      it "User of the whishlist equals of the user saved" do
+        post :add_to_wishlist, params: {id: @property.id}
+        @property.reload
+        expect(@property.user.id).to eql(User.last.id)
+      end
+    end
  
     context "with invalid tokens" do
       it "can't add to wishlist" do
