@@ -12,7 +12,7 @@ RSpec.describe Api::V1::UsersController, type: :controller do
       # Aqui estamos preparando os atributos que serão atualizados no User
       @new_attributes = {name: FFaker::Name.name}
     end
- 
+
     context "with valid params and tokens" do
       before do
         # Aqui nós estamos colocando no header os tokens (Sem isso a chamada seria bloqueada)
@@ -31,8 +31,8 @@ RSpec.describe Api::V1::UsersController, type: :controller do
         @user.reload
         expect(@user.photo.present?).to eql(true)
       end
-    end 
- 
+    end
+    
     context "with invalid token" do
       it "not updates the requested user" do
         @name = FFaker::Name.name
