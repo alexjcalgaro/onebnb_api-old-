@@ -67,7 +67,21 @@
     "openedPathsList": {
         "files": [],
         "folders": [
+            "/home/alex/Documentos/OneBitCode/onebnb_client",
             "/home/alex/Documentos/OneBitCode/onebnb_api"
         ]
+    },
+    "windowsState": {
+        "openedFolders": [],
+        "lastActiveWindow": {
+            "workspacePath": "/home/alex/Documentos/OneBitCode/onebnb_client",
+            "uiState": {
+                "mode": 0,
+                "x": 65,
+                "y": 1104,
+                "width": 1855,
+                "height": 1056
+            }
+        }
     }
 }
