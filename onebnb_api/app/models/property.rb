@@ -9,6 +9,7 @@ class Property < ApplicationRecord
   belongs_to :facility
   has_many :wishlists
   has_many :photos
+  has_many :reservations
  
   # Associa aos comentários
   has_many :comments
@@ -21,6 +22,7 @@ class Property < ApplicationRecord
  
   def search_data
     {
+      name: name,
       status: status,
       address_country: address.country,
       address_city: address.city,
@@ -34,5 +36,9 @@ class Property < ApplicationRecord
       refrigerato: facility.refrigerator,
       heater: facility.heater
     }
+  end
+
+  def get_rating
+    self.rating.round
   end
 end
